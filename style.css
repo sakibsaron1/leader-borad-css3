@@ -38,6 +38,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 30px;
+    
 }
 
 .top-player .player-area{
@@ -107,14 +108,11 @@ hr{
 .course-icon .fa-star.filled{
     color: #FFC014;
     font-size: 12px;
-    ;
 }
 
 .course-icon .fa-star.gap{
     color: #AEAEAE;
     font-size: 12px;
-    ;
-    ;
 }
 
 .course-something{
@@ -158,4 +156,33 @@ hr{
 
 .couse-pera{
     color: #ED6B4F;
+}
+/*---------------------
+    Media Screen 
+------------------------*/
+@media only screen and (max-width: 688px) {
+    .player-main{
+        width: 100%;
+    }
+
+    .top-player, .blogs{
+        grid-row-gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .latest-course{
+        display: block;
+    }
+    .couse-width{
+        margin-bottom: 20px;
+    }
+    /* .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    } */
+
+    /* .blog-content{
+        grid-template-columns: repeat(2, 1fr);
+    } */
+    
 }
